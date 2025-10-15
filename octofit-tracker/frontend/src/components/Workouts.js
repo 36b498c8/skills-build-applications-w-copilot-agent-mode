@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 
 const Workouts = () => {
   const [workouts, setWorkouts] = useState([]);
+  const codespaceName = window.location.hostname.split('-3000')[0];
   const apiUrl = window.location.hostname.includes('app.github.dev')
-    ? `https://${window.location.hostname.replace('-3000', '-8000')}/api/workouts/`
+    ? `https://${codespaceName}-8000.app.github.dev/api/workouts/`
     : 'http://localhost:8000/api/workouts/';
 
   useEffect(() => {
