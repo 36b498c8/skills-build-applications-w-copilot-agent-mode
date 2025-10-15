@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 
 const Activities = () => {
   const [activities, setActivities] = useState([]);
-  const apiUrl = `${process.env.REACT_APP_CODESPACE_NAME ? `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev` : 'http://localhost:8000'}/api/activities/`;
+  const apiUrl = window.location.hostname.includes('app.github.dev')
+    ? `https://${window.location.hostname.replace('-3000', '-8000')}/api/activities/`
+    : 'http://localhost:8000/api/activities/';
 
   useEffect(() => {
     fetch(apiUrl)
