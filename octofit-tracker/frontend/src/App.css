@@ -1,0 +1,99 @@
+
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #e3f2fd 0%, #f8bbd0 100%);
+  min-height: 100vh;
+}
+
+
+.App-logo {
+  height: 60px;
+  pointer-events: none;
+  margin-right: 16px;
+  float: left;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: #1976d2;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+
+.App-link {
+  color: #d81b60;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Table Styling */
+table.table {
+  background-color: #fff3e0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.08);
+}
+thead.table-primary {
+  background-color: #1976d2;
+  color: #fff;
+}
+tbody tr:hover {
+  background-color: #e1bee7;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #d81b60;
+  border: none;
+}
+.btn-outline-light {
+  color: #1976d2;
+  border-color: #1976d2;
+}
+.btn-outline-light:hover {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  color: #1976d2;
+  font-weight: 700;
+}
+
+/* Navigation Styling */
+.navbar {
+  background: linear-gradient(90deg, #1976d2 60%, #d81b60 100%);
+  color: #fff;
+  border-radius: 0.5rem;
+}
+.navbar-brand {
+  color: #fff !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+.nav-link.active, .nav-link:hover {
+  color: #d81b60 !important;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
